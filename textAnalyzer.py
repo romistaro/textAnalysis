@@ -21,9 +21,9 @@ class textanalysis(object):
 
 	def freqOf(self, word):
 		
-		textdict = self.countAll
+		textdict = self.countAll()
 
-		if (word in textdict):
+		if word in textdict:
 			return textdict[word]
 		else:
 			return 0
